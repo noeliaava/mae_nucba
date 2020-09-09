@@ -33,7 +33,7 @@ h5 {
 ul {
     width: 80%;
     height: 40px;
-    padding: 0 10px 0 25%;
+    padding: 20px 10px 0 25%;
     display: grid;
     grid-template-columns: repeat(7,70px);
     
@@ -143,6 +143,10 @@ figure {
     width: 100%;
     margin: 0;
     display: flex;
+    height: 70px;
+    z-index: 9999;
+    position: fixed;
+    background-color: #22577a;
 }
 
 .navbar__brand {
