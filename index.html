@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet & English</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -22,12 +17,12 @@
                     <div class="space"></div>
                     <ul class="navbar__nav">
                         <li class="nav__item active" id="home"><a href="index.html">Home</a></li>
-                        <li class="nav__item" id="aobut"><a href="index.html#about">About</a></li>
-                        <li class="nav__item" id="blog"><a href="index.html#blog">Blog</a></li>
-                        <li class="nav__item" id="members"><a href="index.html#team">Our Team</a></li>
-                        <li class="nav__item" id="contact"><a href="index.html#contact">Contact</a></li>
-                        <li class="nav__item" id="register"><a class="chip" href="#">Register</a></li>
-                        <li class="nav__item" id="login"><a href="#">Login</a></li>
+                        <li class="nav__item" id="about-link"><a href="index.html#about">About</a></li>
+                        <li class="nav__item" id="blog-link"><a href="index.html#blog">Blog</a></li>
+                        <li class="nav__item" id="members-link"><a href="index.html#team">Our Team</a></li>
+                        <li class="nav__item" id="contact-link"><a href="index.html#contact">Contact</a></li>
+                        <li class="nav__item" id="register-link"><a class="chip" href="#">Register</a></li>
+                        <li class="nav__item" id="login-link"><a href="#">Login</a></li>
                     </ul>
             </nav>
             <div class="container">
@@ -55,20 +50,9 @@
             </div>
         </section>
 
-        <div class="row" id="carousel_1">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="assets/img/carousel_2.jpg" alt="slide1">
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/carousel_3.jpg" alt="slide2">
-                    </div>
-                </div>
-            </div>  
+        <div class="carousel">
+            <img class="carousel__img" src="assets/img/carousel_2.jpg" alt="slide1">
         </div>
-
 
         <section class="blog" id="blog">
             <h2 class="center">- OUR  BLOG -</h2>
@@ -86,7 +70,7 @@
                         <p class="blog__text text">There are bars in the city of Buenos Aires that were 
                             the meeting point of great musicians, the debate space of important writers 
                             or places for social gatherings of actors and politicians. Many of them are 
-                            considered "notable" and are an official part of the city's cultural heritage.
+                            considered "notable" and are a part of the city's cultural heritage.
                         </p>
                         <div class="blog__button chip">
                             <a href="#">
@@ -118,8 +102,6 @@
                 </article>
             </div>
         </section>
-
-
         <section class="container__card" id="team">
             <div class="card__titles">
                 <h2 class="card__title right">- OUR TEAM -</h2>
@@ -237,7 +219,7 @@
 			</form>
         </section>
     </main>
-    <footer>
+    <footer class="transition-bkg">
         <div class="wrapper">
             <div class="wrapper__links">
                 <a class="social-link social-link--github" id="github">
@@ -277,7 +259,13 @@
                     </svg>
                 </a>
             </div>
-        </div>	  
+            <div>
+                <p class="center">COPYRIGHT © 2020 - Avalos Noelia</p>
+            </div>	 
+        </div>
+
+            
+  
     </footer>
 </body>
 </html>
