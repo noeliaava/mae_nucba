@@ -29,9 +29,9 @@ h5 {
 ul {
     width: 80%;
     height: 40px;
-    padding: 0 0 0 35%;
+    padding: 0 0 0 32%;
     display: grid;
-    grid-template-columns: repeat(3,50px) 80px 70px 80px 60px;
+    grid-template-columns: repeat(3,60px) 80px 85px 95px 70px;
     
 }
 
@@ -105,7 +105,12 @@ figure {
     justify-content: center;
     align-items: center;
 }
-.navbar .navbar__nav .nav__item:hover {
+.navbar .navbar__nav .nav__item:nth-child(1):hover, 
+.navbar .navbar__nav .nav__item:nth-child(2):hover,
+.navbar .navbar__nav .nav__item:nth-child(3):hover,
+.navbar .navbar__nav .nav__item:nth-child(4):hover,
+.navbar .navbar__nav .nav__item:nth-child(5):hover,
+.navbar .navbar__nav .nav__item:nth-child(7):hover {
     border-bottom: 3px solid white;
 }
 
@@ -183,7 +188,6 @@ figure {
 
 .blog__img {
     width: 500px;
-    height: 302px;
     padding-left: 20px;
     background: linear-gradient(90deg, rgba(87,204,153,1) 0%, rgba(56,163,165,1) 64%);
     border-radius: 22px;
@@ -194,7 +198,6 @@ figure {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: center;
 }
 
 .blog__post {
@@ -344,7 +347,7 @@ label {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
     ul {
         width: 100%;
         height: 40px;
@@ -389,7 +392,6 @@ label {
     }
     .blog__img {
         width: 350px;
-        height: 215px;
         padding-left: 10px;
     }
     .blog__post {
@@ -406,7 +408,7 @@ label {
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 720px){
     .navbar {
         display: flex;
         flex-direction: column;
@@ -466,7 +468,7 @@ label {
         display: flex;
         flex-flow: column;
         justify-content: center;
-        align-items: center;
+
     }
     .blog__post {
         padding: 40px 20px;
@@ -474,7 +476,113 @@ label {
     }
     .blog__img {
         width: 400px;
-        height: 250px;
+    }
+
+    .container__card {
+        padding: 20px 20px;
+    }
+    .card__titles {
+        align-items: center;
+        grid-template-columns: 400px;
+        padding: 0px 20px;
+    }
+    .card__title {
+    text-align: center;
+    }
+    .card__text {
+        justify-self: center;
+    }
+    .card {
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
+        width: 250px;
+        height: 340px;
+        padding-top: 10px;
+    }
+    .card-img-top {
+        width: 50%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 540px){
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar__brand {
+        padding: 10px 0 0 0;
+    }
+
+    ul {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px 0 10px;
+        grid-template-columns: repeat(1,auto);
+    }
+    .container__nav {
+        height: 350px;
+    }
+
+    .heading__title {
+        padding: 0;
+        margin-top: 140px;
+        font-size: 32px;
+    }
+    .heading__text {
+        font-size: 16px;
+    }
+    .about {
+        flex-flow: column;
+        padding: 20px 20px;
+        align-items: center;
+    }
+
+    .about__container {
+        padding: 0;
+        text-align: center;
+    }
+    .about__text {
+        padding: 20px;
+    }
+    .about__img {
+        margin-top: 15px;
+        width: 300px;
+        padding-top: 0px;
+    }
+    .about__box {
+        width: 300px;
+        height: 200px;
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    .carousel {
+        padding: 20px 0px;
+    }
+    .carousel__img {
+        height: 180px;
+    }
+    .blog {
+        padding: 20px 20px;
+        text-align: center;
+    }
+    .blog__container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .blog__post {
+        padding: 20px 20px 40px 20px;
+        width: 400px; 
+    }
+    .blog__img {
+        width: 300px;
     }
 
     .container__card {
