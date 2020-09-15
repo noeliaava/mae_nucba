@@ -26,7 +26,7 @@ h5 {
     font-weight: 400;
 }
 
-ul {
+.navbar__nav {
     width: 80%;
     height: 40px;
     padding: 0 0 0 32%;
@@ -54,18 +54,31 @@ figure {
 
 .chip {
     color: #FFFFFF;
-    padding: 0;
+    padding: 2px 0px 5px 0px;
     border-radius: 16px;
-    width: 160px;
+    width: 90px;
     font-weight: 600;
     margin: auto;
     box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
     background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
 }
 
-.chip:hover{
-    transform: scale(1.2);
+.chip-long {
+    color: #FFFFFF;
+    padding: 2px;
+    border-radius: 16px;
+    width: 150px;
+    font-weight: 600;
+    margin: auto;
+    box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
+    background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
 }
+
+.chip-long:hover {
+    transform: scale(1.2);
+    transition: 1.2s;
+}
+
 .center {
     text-align: center;
 }
@@ -119,6 +132,11 @@ figure {
     color: white
 }
 
+.nav__item-bottom a{
+    color: black;
+}
+
+
 .active {
     font-weight: bold;
 }
@@ -127,8 +145,14 @@ figure {
     width: 80px;
 }
 
+li .chip:hover {
+    transform: scale(1.2);
+    transition: 1.2s;
+}
+
 #register .chip {
     padding: 3px 0;
+    
 }
 
 .heading__title {
@@ -168,9 +192,6 @@ figure {
     border-radius: 22px;
     width: 380px;
 }
-.about__img:hover {
-    transform: scale(1.2);
-}
 
 .about__box {
     width: 400px;
@@ -179,6 +200,18 @@ figure {
     background: linear-gradient(90deg, rgba(87,204,153,1) 0%, rgba(56,163,165,1) 64%);
     border-radius: 22px;
     box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
+    animation-name: goright;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes goright {
+    from {
+        margin-right: 20px;
+    }
+    to {
+        margin-right: 0px;
+    }
 }
 
 /* BLOG */
@@ -211,10 +244,6 @@ figure {
 
 .text {
     padding-bottom: 20px;
-}
-
-.blog__button:hover {
-    transform: scale(1.2);
 }
 
 .blog__more {
@@ -263,7 +292,7 @@ figure {
     background: linear-gradient(90deg, rgba(87,204,153,1) 0%, rgba(56,163,165,1) 64%);
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
+    box-shadow: 0 3px 10px 0 #e2dede, 0 0px 3px 0 #C2C2C2;
     width: 300px;
     height: 370px;
     padding-top: 20px;
@@ -271,6 +300,7 @@ figure {
 }
 .card:hover {
     transform: scale(1.2);
+    transition: 1s;
 }
 
 
@@ -278,13 +308,21 @@ figure {
     width: 60%;
 }
 
-.chip__founder {
-    padding: 3px 0px;
+.chip__card {
+    color: #FFFFFF;
+    padding: 2px;
+    border-radius: 16px;
+    width: 115px;
+    font-weight: 600;
+    margin: auto;
+    box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
+    background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
 }
 
-.chip__founder:hover {
-    transform: scale(1.2);
+.chip__founder {
+    padding: 0px;
 }
+
 /* CONTACT */
 
 .contact {
@@ -317,10 +355,20 @@ figure {
     border: none;
 }
 
+.button--reset:hover {
+    transform: scale(1.2);
+    transition: 1.2s;
+}
+
 .button--submit {
     margin-left: 20px;
     padding: 10px 0;
     border: none;
+}
+
+.button--submit:hover {
+    transform: scale(1.2);
+    transition: 1.2s;
 }
 
 input {
@@ -618,10 +666,10 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 200px;
-    background-image: linear-gradient(to bottom right, #c7f9cc);
+    background: linear-gradient(to bottom right, #c7f9cc);
     transition: all .4s ease-out;
     background-color: #22577a;
  }
@@ -679,5 +727,19 @@ label {
     .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
       stroke: currentColor;
       transform: scale(1.1);
-      transition: all .45s; }
+      transition: all .45s; 
+    }
 
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__sections {
+    padding: 0;
+}
+
+.container__sections li {
+    padding: 3px 0px;
+}
