@@ -142,14 +142,7 @@ figure {
     font-size: 18px;
     padding: 3px 0px;
 }
-.navbar .navbar__nav .nav__item:nth-child(1):hover, 
-.navbar .navbar__nav .nav__item:nth-child(2):hover,
-.navbar .navbar__nav .nav__item:nth-child(3):hover,
-.navbar .navbar__nav .nav__item:nth-child(4):hover,
-.navbar .navbar__nav .nav__item:nth-child(5):hover,
-.navbar .navbar__nav .nav__item:nth-child(7):hover {
-    border-bottom: 3px solid white;
-}
+
 
 .nav__item a {
     color: white;
@@ -563,8 +556,8 @@ input[type="checkbox"] {
         color: #b53561; }
     
     .social-link .social-svg {
-        width: 3rem;
-        height: 3rem; }
+        width: 2.5rem;
+        height: 2.5rem; }
     .social-link .social-svg .social-group__icon {
         fill: #38a3a5;
         transition: all .2s; }
@@ -603,8 +596,90 @@ input[type="checkbox"] {
 .container__sections li a{
     padding: 3px 0px;
     color: #38a3a5;
+    font-size: 14px;
 }
 
+/* LOGIN */
+.container__login {
+    padding: 40px 20px;
+}
+
+.login__form {
+    box-sizing: border-box;
+    padding: 0px 0px 30px 0px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0px 0px 17px -5px rgba(87,204,153,1);
+}
+
+.login__form .form__label {
+    padding: 5px 0;
+    width: 80%;
+}
+
+.login__form .form__label:nth-child(3) input {
+    border: none;
+    box-shadow: 0px 0px 17px -5px rgba(87,204,153,1);
+}
+
+.login__img {
+    background-image: url("../assets/img/login_back2.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.login__form .form__label input {
+    height: 30px;
+}
+
+.login--button {
+    width: 80px;
+    box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
+    background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
+    border-radius: 16px;
+    border: none;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+    color: white;
+}
+
+.pass--text {
+    margin: 3px 0px;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.login__form a {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.reg__container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.reg__container p, .reg__container a {
+    margin: 10px 0px;
+    padding: 0px;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+.reg__container p {
+    margin-right: 5px;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 425px){
@@ -662,6 +737,12 @@ input[type="checkbox"] {
     .nav__item-bottom a {
         font-size: 18px;
     }
+    .login__form .form__label label, .login__form .form__label input {
+        font-size: 16px;
+    }
+    .login__form button {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 576px){
@@ -671,6 +752,15 @@ input[type="checkbox"] {
         align-items: center;
         justify-content: center;
         height: 80px;
+    }
+
+    .navbar .navbar__nav .nav__item:nth-child(1):hover, 
+    .navbar .navbar__nav .nav__item:nth-child(2):hover,
+    .navbar .navbar__nav .nav__item:nth-child(3):hover,
+    .navbar .navbar__nav .nav__item:nth-child(4):hover,
+    .navbar .navbar__nav .nav__item:nth-child(5):hover,
+    .navbar .navbar__nav .nav__item:nth-child(7):hover {
+        border-bottom: 3px solid white;
     }
 
     .navbar__brand {
@@ -767,6 +857,36 @@ input[type="checkbox"] {
     }
     .card-img-top {
         width: 50%;
+    }
+    .container__login {
+        padding: 80px 60px;
+    }
+    .login__form .form__label label, .login__form .form__label input {
+        font-size: 20px;
+    }
+    .login__form .form__label input {
+        height: 40px;
+    }
+    .login__form a, .reg__container p {
+        font-size: 18px;
+    }
+    .reg__container p {
+        margin-right: 18px;
+    }
+    .container__login {
+        padding: 60px;
+    }
+    .login--button {
+        width: 100px;
+        padding: 15px;
+        margin: 20px 0px 20px 0px;
+    }
+    .login__form button {
+        font-size: 22px;
+    }
+    .login__img {
+        margin-bottom: 20px;
+        height: 200px;
     }
 }
 
@@ -896,6 +1016,12 @@ input[type="checkbox"] {
         width: 4rem;
         height: 4rem;
     }
+    .login__form {
+        width: 80%;
+    }
+    .wrapper {
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -987,6 +1113,20 @@ input[type="checkbox"] {
     }
     .blog__header h5, .card-body h5 {
         font-size: 16px;
+    }
+    .login__form {
+        width: 40%;
+        background-color: white;
+    }
+    .container__login {
+        padding: 70px;
+        background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
+    }
+    .wrapper {
+        background-color: #c7f9cc;
+    }
+    .wrapper:hover {
+        background-color: #22577a;
     }
 }
 
