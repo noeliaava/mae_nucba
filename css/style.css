@@ -525,62 +525,62 @@ input[type="checkbox"] {
     transition: all .4s ease-out;
     background-color: #22577a;
 }
-    .wrapper__links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-        @media (max-width: 600px) {
-            .wrapper__links {
-            width: 40%; } }
-        @media (min-width: 601px) and (max-width: 992px) {
-            .wrapper__links {
-            width: 30%; } }
-        @media (min-width: 993px) and (max-width: 1919px) {
-            .wrapper__links {
-            width: 20%; } }
+.wrapper__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 600px) {
+        .wrapper__links {
+        width: 40%; } }
+    @media (min-width: 601px) and (max-width: 992px) {
+        .wrapper__links {
+        width: 30%; } }
+    @media (min-width: 993px) and (max-width: 1919px) {
+        .wrapper__links {
+        width: 20%; } }
 
-    
-    .wrapper:hover {
-        background-color: #c7f9cc; }
-    
-    .social-link--linkedin {
-        color: #2d76b0; }
-    
-    .social-link--github {
-        color: #000; }
-    
-    .social-link--instagram {
-        color: #9a2970; }
-    
-    .social-link--dribbble {
-        color: #b53561; }
-    
-    .social-link .social-svg {
-        width: 2.5rem;
-        height: 2.5rem; }
-    .social-link .social-svg .social-group__icon {
-        fill: #38a3a5;
-        transition: all .2s; }
-    .social-link .social-svg .social-group__inner-circle {
-        fill: transparent;
-        transition: all .2s; }
-    .social-link .social-svg .social-group__outline {
-        stroke: #38a3a5;
-        transform-origin: 50% 50%;
-        transition: all .2s; }
-    .social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
-        fill: white;
-        transition: all .45s; }
-    .social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
-        fill: currentColor;
-        transition: all .45s; }
-    .social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
-        fill: url(#simpleInsta) !important; }
-    .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
-        stroke: currentColor;
-        transform: scale(1.1);
-        transition: all .45s; 
-    }
+
+.wrapper:hover {
+    background-color: #c7f9cc; }
+
+.social-link--linkedin {
+    color: #2d76b0; }
+
+.social-link--github {
+    color: #000; }
+
+.social-link--instagram {
+    color: #9a2970; }
+
+.social-link--dribbble {
+    color: #b53561; }
+
+.social-link .social-svg {
+    width: 2.5rem;
+    height: 2.5rem; }
+.social-link .social-svg .social-group__icon {
+    fill: #38a3a5;
+    transition: all .2s; }
+.social-link .social-svg .social-group__inner-circle {
+    fill: transparent;
+    transition: all .2s; }
+.social-link .social-svg .social-group__outline {
+    stroke: #38a3a5;
+    transform-origin: 50% 50%;
+    transition: all .2s; }
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+    fill: white;
+    transition: all .45s; }
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+    fill: currentColor;
+    transition: all .45s; }
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+    fill: url(#simpleInsta) !important; }
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+    stroke: currentColor;
+    transform: scale(1.1);
+    transition: all .45s; 
+}
 
 .sections {
     display: flex;
@@ -961,7 +961,7 @@ input[type="checkbox"] {
     .blog__header {
         padding-top: 20px;
     }
-    .blog__header h3, button{
+    .blog__header h3, button {
         font-size: 24px;
     }
     .blog__header h3, .blog__header h5 {
@@ -1089,12 +1089,18 @@ input[type="checkbox"] {
     .options label {
         padding: 0 10px;
     }
+    .button--reset, .button--submit {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
     .wrapper {
-        padding: 30px;
+        padding: 40px;
         flex-direction: column; 
     }
     .wrapper__links {
-        width: 25%;
+        width: 20%;
     }
     .sections {
         flex-direction: row;
@@ -1173,7 +1179,7 @@ input[type="checkbox"] {
         width: 130px;
     }
     button {
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 
