@@ -241,6 +241,22 @@ li .chip:hover {
     border-radius: 22px;
     width: 250px;
 }
+.values__container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.values__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: justify;
+}
+.values__card img {
+    width: 25%;
+}
 
 .about__box {
     width: 250px;
@@ -351,7 +367,7 @@ li .chip:hover {
 }
 
 .card {
-    background: linear-gradient(90deg, rgba(87,204,153,1) 0%, rgba(56,163,165,1) 64%);
+    background: linear-gradient(90deg, #57cc99 0%, #38a3a5 64%);
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 3px 10px 0 #e2dede, 0 0px 3px 0 #C2C2C2;
@@ -740,6 +756,22 @@ input[type="checkbox"] {
     .about__container h1,.blog h1,.card__title,.contact h1 {
         font-size: 24px;
     }
+    .values__container {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .values__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: justify;
+    }
+    .values__card img {
+        width: 25%;
+    }
     .blog__header h3 {
         font-size: 20px;
     }
@@ -986,6 +1018,10 @@ input[type="checkbox"] {
     .about__img {
         width: 400px;
     }
+    .values__card p {
+        width: 70%;
+    }
+
     .blog {
         padding: 20px 40px;
     }
@@ -1222,6 +1258,22 @@ input[type="checkbox"] {
     }
     .about,.blog, .container__card {
         padding: 60px 80px;
+    }
+    .values__container {
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    .values__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: justify;
+    }
+    .values__card img {
+        width: 25%;
     }
     .carousel__img {
         height: 500px
