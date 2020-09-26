@@ -505,6 +505,7 @@ textarea {
     font-family: 'Exo 2', sans-serif;
     color:gray;
     text-indent: 10px;
+    max-width: 250px;
 }
 
 label {
@@ -817,6 +818,9 @@ input[type="checkbox"] {
     .login--button,.register--button {
         width: 100px;
     }
+    textarea {
+        max-width: 300px;
+    }
 }
 
 @media screen and (min-width: 576px){
@@ -959,6 +963,9 @@ input[type="checkbox"] {
     .login__img {
         margin-bottom: 20px;
         height: 200px;
+    }
+    textarea {
+        max-width: 400px;
     }
 }
 
@@ -1128,6 +1135,9 @@ input[type="checkbox"] {
             transform: translateX(0);
         }
     }
+    textarea {
+        max-width: 500px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -1196,6 +1206,9 @@ input[type="checkbox"] {
     }
     .form__label:nth-child(5) .options {
         flex-direction: row;
+    }
+    textarea {
+        max-width: 500px;
     }
     .options label {
         padding: 0 10px;
@@ -1324,6 +1337,9 @@ input[type="checkbox"] {
     }
     button {
         font-size: 22px;
+    }
+    textarea {
+        max-width: 600px;
     }
 }
 
