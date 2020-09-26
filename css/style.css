@@ -1136,7 +1136,7 @@ input[type="checkbox"] {
         }
     }
     textarea {
-        max-width: 500px;
+        max-width: 430px;
     }
 }
 
@@ -1339,7 +1339,7 @@ input[type="checkbox"] {
         font-size: 22px;
     }
     textarea {
-        max-width: 600px;
+        max-width: 500px;
     }
 }
 
