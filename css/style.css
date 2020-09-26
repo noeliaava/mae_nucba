@@ -1079,6 +1079,9 @@ input[type="checkbox"] {
     .form__buttons {
         padding-bottom: 30px;
     }
+    .chip-long {
+        animation: slide-left 4s ease-in-out infinite alternate both;
+    }
     .chip {
         width: 110px;
     }
@@ -1091,6 +1094,7 @@ input[type="checkbox"] {
     .social-link .social-svg {
         width: 4rem;
         height: 4rem;
+        animation: slide-left 4s ease-in-out infinite alternate both;
     }
     .login__form {
         width: 80%;
@@ -1109,6 +1113,20 @@ input[type="checkbox"] {
     }
     .brand__cointainer img{
         width:180px;
+    }
+    .values__card img {
+        animation: slide-left 4s ease-in-out infinite alternate both;
+    }
+    @keyframes slide-left {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 }
 
