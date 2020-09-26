@@ -317,7 +317,6 @@ li .chip:hover {
 
 .carousel__img {
     width: 100%;
-    height: 220px;
 }
 
 
@@ -363,7 +362,7 @@ li .chip:hover {
 .card:hover {
     transform: scale(1.2);
     transition: 1s;
-   /* cursor: pointer;*/
+    cursor: pointer;
 }
 
 .card a h4 {
@@ -855,9 +854,6 @@ input[type="checkbox"] {
     .carousel {
         padding: 20px 0px;
     }
-    .carousel__img {
-        height: 180px;
-    }
     .blog {
         padding: 20px 20px;
         text-align: center;
@@ -990,9 +986,6 @@ input[type="checkbox"] {
     .about__img {
         width: 400px;
     }
-    .carousel__img {
-        height: 450px;
-    }
     .blog {
         padding: 20px 40px;
     }
@@ -1115,9 +1108,6 @@ input[type="checkbox"] {
     .about__text {
         padding: 30px 40px 30px 10px;
         font-size: 18px;
-    }
-    .carousel__img {
-        height: 470px;
     }
     .blog, .container__card {
         padding: 40px 40px;
