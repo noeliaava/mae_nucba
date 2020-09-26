@@ -521,9 +521,8 @@ input[type="checkbox"] {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background: linear-gradient(to bottom right, #c7f9cc);
     transition: all .4s ease-out;
-    background-color: #22577a;
+    background-color: rgba(210,253,238,1);
 }
 .wrapper__links {
     display: flex;
@@ -541,7 +540,8 @@ input[type="checkbox"] {
 
 
 .wrapper:hover {
-    background-color: #c7f9cc; }
+    background-color: rgba(190,293,398,1);
+    transition: 1.2s; }
 
 .social-link--linkedin {
     color: #2d76b0; }
@@ -600,11 +600,11 @@ input[type="checkbox"] {
 }
 
 /* LOGIN */
-.container__login {
+.container__login,.container__register {
     padding: 40px 20px;
+    background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
 }
-
-.login__form {
+.login__form,.register__form {
     box-sizing: border-box;
     padding: 0px 0px 30px 0px;
     width: 90%;
@@ -615,14 +615,16 @@ input[type="checkbox"] {
     align-items: center;
     border-radius: 16px;
     box-shadow: 0px 0px 17px -5px rgba(87,204,153,1);
+    background-color: white;
 }
 
-.login__form .form__label {
+.login__form .form__label,.register__form .form__label  {
     padding: 5px 0;
     width: 80%;
 }
 
-.login__form .form__label:nth-child(3) input {
+.login__form .form__label:nth-child(3) input,
+.register__form .form__label input {
     border: none;
     box-shadow: 0px 0px 17px -5px rgba(87,204,153,1);
 }
@@ -636,17 +638,18 @@ input[type="checkbox"] {
     border-radius: 16px 16px 0px 0px;
 }
 
-.login__form .form__label input {
+.login__form .form__label input,
+.register__form .form__label input {
     height: 30px;
 }
 
-.login--button {
-    width: 80px;
+.login--button,.register--button {
+    width: 90px;
     box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
     background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
     border-radius: 16px;
     border: none;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0px 0px 0px;
     color: white;
 }
@@ -680,6 +683,17 @@ input[type="checkbox"] {
 .reg__container p {
     margin-right: 5px;
 }
+
+/* REGISTER */
+.register__img {
+    background-image: url(../assets/img/reg_xs_m.jpg);
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 425px){
@@ -742,6 +756,9 @@ input[type="checkbox"] {
     }
     .login__form button {
         font-size: 18px;
+    }
+    .login--button,.register--button {
+        width: 100px;
     }
 }
 
@@ -873,8 +890,8 @@ input[type="checkbox"] {
     .reg__container p {
         margin-right: 18px;
     }
-    .container__login {
-        padding: 60px;
+    .container__login, .container__register {
+        padding: 60px 80px;
     }
     .login--button {
         width: 100px;
@@ -1022,6 +1039,15 @@ input[type="checkbox"] {
     .wrapper {
         padding: 20px;
     }
+    .pass--text, .reg__container a {
+        font-size: 16px;
+    }
+    .login--button,.register--button {
+        width: 130px;
+    }
+    .register__img {
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -1124,15 +1150,29 @@ input[type="checkbox"] {
         width: 40%;
         background-color: white;
     }
-    .container__login {
-        padding: 70px;
-        background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
-    }
     .wrapper {
         background-color: #c7f9cc;
     }
     .wrapper:hover {
         background-color: #22577a;
+    }
+    .register__form {
+        width: 50%;
+    }
+    .register__img {
+        background-image: url("../assets/img/reg_xl.jpg");
+        height: 240px;
+    }
+    .register__form .form__label {
+        padding-top: 20px;
+        width: 70%;
+    }
+    .register__form .form__label input {
+        height: 35px;
+    }
+    input[type="password"] {
+        font: large Verdana,sans-serif;
+        letter-spacing: 1px;
     }
 }
 
