@@ -131,6 +131,9 @@ figure {
     margin: auto;
     visibility: hidden;
 }
+.brand__cointainer {
+    visibility: visible;
+}
 
 .nav__item {
     width: 100%;
@@ -603,6 +606,7 @@ input[type="checkbox"] {
 .container__login,.container__register {
     padding: 40px 20px;
     background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
+    text-align: center;
 }
 .login__form,.register__form {
     box-sizing: border-box;
@@ -892,6 +896,7 @@ input[type="checkbox"] {
     }
     .container__login, .container__register {
         padding: 60px 80px;
+        
     }
     .login--button {
         width: 100px;
