@@ -15,6 +15,7 @@ body, html {
     box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
     border-radius: 16px 16px 0px 16px;
     padding: 5px;
+    text-align: center;
 }
 .button--totop {
     color: #c7f9cc;
@@ -239,7 +240,7 @@ li .chip:hover {
 .about__img {
     box-sizing: border-box;
     border-radius: 22px;
-    width: 250px;
+    width: 100%;
 }
 .values__container {
     padding: 30px;
@@ -259,7 +260,7 @@ li .chip:hover {
 }
 
 .about__box {
-    width: 250px;
+    width: 80%;
     padding-right: 10px;
     background: linear-gradient(90deg, rgba(87,204,153,1) 0%, rgba(56,163,165,1) 64%);
     border-radius: 22px;
@@ -301,7 +302,8 @@ li .chip:hover {
 }
 
 .blog__post {
-    padding: 10px; 
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .blog__header h3 {
@@ -319,9 +321,9 @@ li .chip:hover {
     font-size: 14px;
 }
 
-.text {
+/*.text {
     padding-bottom: 20px;
-}
+}*/
 
 .blog__more {
     padding: 5px 10px 8px 10px;
@@ -333,6 +335,7 @@ li .chip:hover {
 
 .carousel__img {
     width: 100%;
+    height: 150px;
 }
 
 
@@ -371,7 +374,7 @@ li .chip:hover {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 3px 10px 0 #e2dede, 0 0px 3px 0 #C2C2C2;
-    width: 300px;
+    width: 85%;
     height: 350px;
     margin: 20px;
 }
@@ -435,7 +438,7 @@ li .chip:hover {
     box-sizing: border-box;
     justify-content: center;
     background-color: white;
-    margin: 20px 10px;
+    margin: auto;
     border-radius: 22px;
 }
 
@@ -686,7 +689,7 @@ input[type="checkbox"] {
 }
 
 .login--button,.register--button {
-    width: 90px;
+    width: 80%;
     box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
     background: linear-gradient(90deg, rgba(34,87,122,1) 0%, rgba(56,163,165,1) 64%);
     border-radius: 16px;
@@ -694,6 +697,7 @@ input[type="checkbox"] {
     padding: 10px;
     margin: 10px 0px 0px 0px;
     color: white;
+    margin-top: 2em;
 }
 
 .pass--text {
@@ -709,10 +713,10 @@ input[type="checkbox"] {
 }
 
 .reg__container {
-    margin: 0px;
-    padding: 0px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
 }
 
 .reg__container p, .reg__container a {
@@ -740,13 +744,17 @@ input[type="checkbox"] {
 /* MEDIA QUERIES */
 @media screen and (min-width: 425px){
     .about__box,.about__img {
-        width: 280px;
+        width: 90%;
+    }
+    .about__box{
+        padding-right: 0px;
     }
     .blog__img {
-        width: 330px;
+        width: 100%;
     }
     .blog__post {
-        width: 340px;
+        width: 90%;
+        margin: auto;
     }
     .heading__title {
         font-size: 28px;
@@ -784,6 +792,9 @@ input[type="checkbox"] {
         padding-bottom: 10px;
         margin-bottom: 0;
     }
+    .carousel__img {
+        height: 200px;
+    }
     .text {
         padding-bottom: 10px;
     }
@@ -815,9 +826,7 @@ input[type="checkbox"] {
     .login__form button {
         font-size: 18px;
     }
-    .login--button,.register--button {
-        width: 100px;
-    }
+
     textarea {
         max-width: 300px;
     }
@@ -878,12 +887,11 @@ input[type="checkbox"] {
     }
     .about__img {
         margin-top: 15px;
-        width: 300px;
+        width: 100%;
         padding-top: 0px;
     }
     .about__box {
-        width: 300px;
-        height: 200px;
+        width: 85%;
         margin-top: 0;
         padding-left: 20px;
     }
@@ -926,7 +934,7 @@ input[type="checkbox"] {
         border-radius: 12px;
         text-align: center;
         box-shadow: 0 1px 10px 0 #e2dede, 0 0px 2px 0 #C2C2C2;
-        width: 250px;
+        width: 40%;
         height: 340px;
         padding-top: 10px;
     }
@@ -952,11 +960,7 @@ input[type="checkbox"] {
         padding: 60px 80px;
         
     }
-    .login--button {
-        width: 100px;
-        padding: 15px;
-        margin: 20px 0px 20px 0px;
-    }
+
     .login__form button {
         font-size: 22px;
     }
@@ -1019,27 +1023,29 @@ input[type="checkbox"] {
         font-size: 20px;
     }
     .about__box {
-        width: 400px;
-        height: 290px;
+        width: 85%;
     }
     .about__img {
-        width: 400px;
+        width: 100%;
     }
     .values__card p {
         width: 70%;
     }
-
+    .carousel__img {
+        height: 300px;
+    }
     .blog {
         padding: 20px 40px;
     }
     .blog__post {
         padding: 20px 40px 40px 40px; 
     }
-    .blog__post,.blog__img {
-        width: 600px;
+    .blog__post{
+        width: 90%;
     }
     .blog__img {
-        padding-left: 15px;
+        padding-left: 0px;
+        width: 100%;
     }
     .blog__header {
         padding-top: 20px;
@@ -1051,7 +1057,7 @@ input[type="checkbox"] {
         text-align: left;
     }
     .blog__header h5, .card-body h5,textarea {
-        font-size: 18px;
+        font-size: 16px;
     }
     .blog__text, .options, .options label, .container__sections li a {
         font-size: 20px;
@@ -1066,7 +1072,7 @@ input[type="checkbox"] {
         padding: 40px 60px;
     }
     .card {
-        width: 280px;
+        width: 40%;
         height: 360px; 
     }
     .card-img-top {
@@ -1077,7 +1083,7 @@ input[type="checkbox"] {
         font-size: 20px;
     }
     .container__form {
-        margin: 20px 100px
+        width: 60%;
     }
     option {
         height: 30px;
@@ -1110,11 +1116,9 @@ input[type="checkbox"] {
         padding: 20px;
     }
     .pass--text, .reg__container a {
-        font-size: 16px;
+        font-size: 18px;
     }
-    .login--button,.register--button {
-        width: 130px;
-    }
+
     .register__img {
         height: 200px;
     }
@@ -1193,8 +1197,8 @@ input[type="checkbox"] {
         grid-template-columns: 0 230px 50px 600px;
     }
     .card {
-        width: 250px;
-        height: 320px;
+        width: 28%;
+        height: 330px;
     }
     .card-body h5 {
         font-size: 16px;
@@ -1202,7 +1206,7 @@ input[type="checkbox"] {
         margin-bottom: 5px;
     }
     .container__form {
-        margin: 20px 300px;
+        width: 50%;
     }
     .form__label:nth-child(5) .options {
         flex-direction: row;
@@ -1263,7 +1267,7 @@ input[type="checkbox"] {
     }
     .register__form .form__label {
         padding-top: 20px;
-        width: 70%;
+        width: 80%;
     }
     .register__form .form__label input {
         height: 35px;
@@ -1317,12 +1321,10 @@ input[type="checkbox"] {
         grid-template-columns: 0px 300px 100px 700px;
     }
     .card {
-        width: 300px;
+        width: 25%;
         height: 350px; 
     }
-    .container__form {
-        margin: 20px 330px;
-    }
+
     label, input, #idioma, .options, textarea, .options {
         font-size: 22px;
     }
@@ -1341,7 +1343,98 @@ input[type="checkbox"] {
     textarea {
         max-width: 500px;
     }
+
 }
 
+@media screen and (min-width: 1920px) {
+    .navbar__brand {
+        padding: 0px 0 0 30px;
+    }
+    .heading__title {
+        font-size: 72px;
+    }
+    .space {
+        width: 95%;
+    }
+    .container__nav {
+        height: 740px;
+    }
+    .about, .blog, .container__card {
+        padding: 60px 100px;
+    }
+    .about__container h1, .blog h1, .card__title, .contact h1 {
+        font-size: 42px;
+    }
+    .about__text {
+        padding: 30px 60px;
+        font-size: 32px;
+    }
+    .about__box {
+        width: 90%;
+    }
+    .about__img {
+        width: 95%;
+    }
+    .values__card p {
+        width: 70%;
+        font-size: 24px;
+    }
+    .carousel__img {
+        height: 600px;
+    }
+    .blog__post, .blog__img {
+        width: 100%;
+    }
+    .blog__header h3, button {
+        font-size: 32px;
+    }
+    .blog__header h5, .card-body h5 {
+        font-size: 20px;
+    }
+    .blog__text, .card__text {
+        font-size: 22px;
+    }
+    .chip-long {
+        width: 25%;
+    }
+    .card__titles {
+        grid-template-columns: 100px 300px 300px 900px;
+    }
+    .card__text {
+        font-size: 32px;
+    }
+    .card {
+        width: 45%;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 0px;
+    }
+    .card-img-top {
+        width: 35%;
+    }
+    .card a h4, .chip__founder, .card__text {
+        font-size: 26px;
+    }
+    .card a h4, .chip__founder, .card__text {
+        font-size: 32px;
+    }
+    .blog__header h5, .card-body h5 {
+        font-size: 24px;
+    }
+    .chip__card {
+        margin-top: 20px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    #to_top {
+        text-align: center;
+        width: 100px;
+    }
+
+}
 
 
