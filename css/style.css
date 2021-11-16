@@ -303,7 +303,7 @@ li .chip:hover {
 
 .blog__post {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .blog__header h3 {
@@ -329,6 +329,12 @@ li .chip:hover {
     padding: 5px 10px 8px 10px;
     margin: 0;
     color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: #22577a;
+    font-weight: 600;
 }
 
 /* CAROUSEL */ 
@@ -1029,7 +1035,7 @@ input[type="checkbox"] {
         padding: 20px 40px;
     }
     .blog__post {
-        padding: 20px 40px 40px 40px; 
+        padding: 20px 30px 40px 30px; 
     }
     .blog__post{
         width: 90%;
@@ -1053,9 +1059,9 @@ input[type="checkbox"] {
     .blog__text, .options, .options label, .container__sections li a {
         font-size: 20px;
     }
-    .blog__text .text{
+    /* .blog__text .text{
         height: 100px;
-    }
+    } */
     .text {
         padding-bottom: 20px;
     }
@@ -1177,9 +1183,9 @@ input[type="checkbox"] {
     .blog__text, .card__text {
         font-size: 18px;
     }
-    .blog__text .text{
+    /* .blog__text .text{
         height: 130px;
-    }
+    } */
     .card__titles {
         display: grid;
         grid-template-columns: 0 230px 50px 600px;
@@ -1276,8 +1282,8 @@ input[type="checkbox"] {
     .nav__item a {
         font-size: 18px;
     }
-    .about,.blog, .container__card {
-        padding: 60px 80px;
+    .about, .blog, .container__card {
+        padding: 60px 40px;
     }
     .values__container {
         padding: 30px;
