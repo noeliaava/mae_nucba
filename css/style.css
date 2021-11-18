@@ -106,7 +106,8 @@ figure {
 /* HEADER */
 
 .container__nav {
-    background-image: url("https://i.ibb.co/pPsMpbD/home-bsas3.jpg");
+    /* background-image: url("https://i.ibb.co/pPsMpbD/home-bsas3.jpg"); */
+    background-image: url("../assets/img/home_bsas1.jpg");
     opacity: 0.85;
     /*background-image: url("");*/
    /* <a href="https://ibb.co/9GD9t3n"><img src="" alt="home-bsas2" border="0"></a>*/
@@ -337,6 +338,13 @@ li .chip:hover {
     font-weight: 600;
 }
 
+.mkt {
+    color: #66c2ff;
+
+}
+
+
+
 /* CAROUSEL */ 
 
 .carousel__img {
@@ -431,7 +439,7 @@ li .chip:hover {
 
 .contact {
     padding: 30px;
-    background-image: url("../assets/img/mission.jpg");
+    background-image: url("../assets/img/contact1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1425,4 +1433,16 @@ input[type="checkbox"] {
 
 }
 
+.cat {
+    text-align: right;
+    padding-bottom: 0;
+    padding-right: 5%;
+}
 
+.referencia-container {
+    padding-top: 10px;
+}
+
+.referencia {
+    font-size: 10px;
+}
