@@ -340,7 +340,7 @@ li .chip:hover {
 .link {
     text-decoration: none;
     color: #22577a;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .mkt {
